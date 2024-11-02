@@ -1,0 +1,25 @@
+exp: TextClassification
+
+mode: 
+   - train
+
+models: 
+    hf_text_classification_model:
+        - distilgpt2
+
+trainfpath: /home/eahintz/nlp/final/lab7_minimal_example.tsv
+
+validfpath: /home/eahintz/nlp/final/lab7_minimal_example2.tsv
+
+modelfpath: lab7_finetuned
+
+id2label:
+    0: Normal
+    1: High Stakes & Exciting
+    2: High Stakes
+    3: Exciting
+    
+
+numLabels: 4
+
+batchsize: 16
