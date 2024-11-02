@@ -18,7 +18,7 @@ in the 'Home', 'Away', 'events', and 'summary' columns with the standardized tea
 This standardization ensures consistency and aids in anonymizing the data. 
 We reckon this will help us be more objective and reduce bias towards certain teams.
     - Then we check and verify that the masked text for any unmasked team names to ensure that all instances have been successfully replaced. 
-We display and review any rows where masking failed to correct issues in the mapping or masking function.
+We display and review any rows where masking failed to correct issues in the mapping or masking function manually.
     
 4.  **Feature Engineering**
     
