@@ -1,0 +1,20 @@
+exp: TextClassification
+
+mode: 
+   - evaluate
+
+models: 
+    hf_text_classification_model:
+        - distilgpt2
+
+datafpath: nlp/final/lab7_minimal_example2.tsv
+
+predfpath: ./model_output/bert_output/bert3_evaluate.tsv
+
+id2label:
+    0: Normal
+    1: High Stakes & Exciting
+    2: High Stakes
+    3: Exciting
+
+batchsize: 16
