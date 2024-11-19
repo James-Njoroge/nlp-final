@@ -1,0 +1,27 @@
+exp: TextClassification
+
+mode: 
+   - train
+
+models: 
+    hf_text_classification_model:
+        - google-bert/bert-base-cased
+
+trainfpath: /home/jnjoroge/nlp/nlp-final/data/train_data.tsv
+validfpath: /home/jnjoroge/nlp/nlp-final/data/validation_data.tsv
+
+modelfpath:  /home/jnjoroge/nlp/nlp-final/model/
+
+loadPretrained: False
+
+epochs: 25
+
+numLabels: 2
+
+id2label:
+    0: Normal
+    1: Exciting
+
+batchsize: 64
+
+samplePercent: 10

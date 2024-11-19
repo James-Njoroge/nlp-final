@@ -1,0 +1,26 @@
+exp: TextClassification
+
+mode: 
+   - analyze
+
+models: 
+    hf_text_classification_model:
+        - /home/jnjoroge/nlp/nlp-final/model
+
+datafpath: /home/jnjoroge/nlp/nlp-final/data/test_data_clean.tsv
+
+predfpath:  /home/jnjoroge/nlp/nlp-final/predictions/preds.tsv
+
+resultsfpath: /home/jnjoroge/nlp/nlp-final/results/results.tsv
+
+numLabels: 2
+
+id2label:
+    0: Normal
+    1: Exciting
+
+batchsize: 64
+
+samplePercent: 10
+
+checkFileColumns: True
