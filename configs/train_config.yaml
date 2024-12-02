@@ -7,14 +7,14 @@ models:
     hf_text_classification_model:
         - google-bert/bert-base-cased
 
-trainfpath: /home/jnjoroge/nlp/nlp-final/data/train_data.tsv
-validfpath: /home/jnjoroge/nlp/nlp-final/data/validation_data.tsv
+trainfpath: /home/jnjoroge/nlp/nlp-final/data/split_comm_data_train.tsv
+validfpath: /home/jnjoroge/nlp/nlp-final/data/split_comm_data_validate.tsv
 
 modelfpath:  /home/jnjoroge/nlp/nlp-final/model/
 
 loadPretrained: False
 
-epochs: 25
+epochs: 40
 
 numLabels: 2
 
@@ -23,5 +23,3 @@ id2label:
     1: Exciting
 
 batchsize: 64
-
-samplePercent: 10
