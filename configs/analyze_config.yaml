@@ -1,17 +1,17 @@
 exp: TextClassification
 
 mode: 
-   - analyze
+   - evaluate
 
 models: 
     hf_text_classification_model:
         - /home/jnjoroge/nlp/nlp-final/model
 
-datafpath: /home/jnjoroge/nlp/nlp-final/data/test_data_clean.tsv
+datafpath: /home/jnjoroge/nlp/nlp-final/data/split_comm_data_test.tsv
 
-predfpath:  /home/jnjoroge/nlp/nlp-final/predictions/preds.tsv
+predfpath:  /home/jnjoroge/nlp/nlp-final/predictions/preds2.tsv
 
-resultsfpath: /home/jnjoroge/nlp/nlp-final/results/results.tsv
+resultsfpath: /home/jnjoroge/nlp/nlp-final/results/results2.tsv
 
 numLabels: 2
 
@@ -20,7 +20,5 @@ id2label:
     1: Exciting
 
 batchsize: 64
-
-samplePercent: 10
 
 checkFileColumns: True
