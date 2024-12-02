@@ -1,6 +1,10 @@
 # Folders that are too big and must be zipped
 model/
 data/
+nlp-final/
+
+.DS_Store
+**/.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

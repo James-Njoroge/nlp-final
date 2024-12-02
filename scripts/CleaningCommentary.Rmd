@@ -1,0 +1,33 @@
+---
+title: "Cleaning-Commentary"
+author: "James Njoroge"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r load and explore}
+library(tidyverse)
+df.pl <- read.csv("../data/23_24_match_details.csv")
+colnames(df.pl)
+df.pl <- df.pl |>
+  filter(!is.na(events)) |>
+  filter(!is.na(id)) |>
+  select(c("id", "events"))
+
+df.pl
+
+write.csv(df.pl, file = "../data/clean_comm_data.csv")
+
+```
+
+
+
+```{r pressure, echo=FALSE}
+df.pl
+```
+
