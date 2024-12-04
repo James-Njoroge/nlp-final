@@ -2,6 +2,7 @@
 model/
 data/
 nlp-final/
+commentary/
 
 .DS_Store
 **/.DS_Store
